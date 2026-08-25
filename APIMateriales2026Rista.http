@@ -1,0 +1,6 @@
+@APIMateriales2026Rista_HostAddress = http://localhost:5002
+
+GET {{APIMateriales2026Rista_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
