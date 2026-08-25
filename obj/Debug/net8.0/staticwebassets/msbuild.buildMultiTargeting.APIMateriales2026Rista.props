@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\APIMateriales2026Rista.props" />
-</Project>
