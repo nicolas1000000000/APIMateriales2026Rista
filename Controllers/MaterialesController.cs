@@ -70,12 +70,10 @@ namespace APIMateriales2026Rista.Controllers
                     throw;
                 }
             }
+            // material.Descripcion = material.Descripcion? .trim() .ToUpper();
 
             return NoContent();
         }
-
-
-//      
 
 
         // POST: api/Materiales
@@ -115,8 +113,6 @@ public async Task<ActionResult<Material>> PostMaterial(Material material)
             {
                 return NotFound();
             }
-
-
 
             _context.Materiales.Remove(material);
             await _context.SaveChangesAsync();

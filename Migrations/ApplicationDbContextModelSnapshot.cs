@@ -91,6 +91,12 @@ namespace APIMateriales2026Rista.Migrations
                     b.Property<string>("Descripcion")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<decimal>("PorcentajeGanancia")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("PrecioVenta")
+                        .HasColumnType("decimal(18,2)");
+
                     b.HasKey("ProductoID");
 
                     b.ToTable("Productos");

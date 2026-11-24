@@ -29,9 +29,13 @@
                         <a class="nav-link active" aria-current="page" href="./Producto.html">Productos</a>
                     </li>
 
-                    <!-- <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./NotaAlumno.html"> Notas Alumnos</a>
-                    </li> -->
+                   <li class="nav-item">
+                        <a class="nav-link active" aria-current="page">Rubros</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./TotalProducto.html">Total producto</a>
+                    </li>
                    
                 </ul>
             </div>
@@ -48,9 +52,9 @@
             <tr>
                 <th>ID</th>
                 <th>Descripcion</th>
-                <th>Eliminado</th>
-                <th></th>
-                <th></th>
+                <th>Modificar</th>
+                <th>Eliminar</th>
+                
                
             </tr>
         </thead>
@@ -96,7 +100,10 @@
 
                 <div class="modal-body">
                     <div class="row">
-                        <input type="number" id="IdRubro" class="form-control" readonly hidden>
+                        <!-- <input type="number" id="IdRubro" class="form-control" readonly hidden> -->
+
+                         <label for="IdRubro">RUBRO (ID)</label> 
+                        <input type="number" id="IdRubro" disabled class="form-control">
 
                         <label for="DescripcionRubroEditar" class="form-label">Descripcion</label>
                     <input type="text" id="DescripcionRubroEditar" class="form-control" style="text-transform: uppercase">

@@ -40,10 +40,5 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
             .HasForeignKey(mp => mp.MaterialID)
             .OnDelete(DeleteBehavior.NoAction);
     }
-
-
-
-  
-    
   
 }

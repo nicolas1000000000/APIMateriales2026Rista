@@ -4,6 +4,8 @@ public class Producto {
     public int ProductoID {get; set;}
     public string? Descripcion {get; set;}
     public decimal CostoTotal { get; set; }
+    public decimal PorcentajeGanancia { get; set; }
+    public decimal PrecioVenta { get; set; }
    
  
 

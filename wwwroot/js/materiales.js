@@ -14,16 +14,12 @@ function MostrarMateriales(data) {
 
         $('#todosLosMateriales').append(
             "<tr>" +
-            "<td>" + item.materialID + "</td>" +
-            "<td>" + item.descripcion + "</td>" +
-            "<td>" + item.precioCosto + "</td>" +
+            "<td >" + item.materialID + "</td>" +
+            "<td class = text-center>" + item.descripcion + "</td>" +
+            "<td class = text-center>$ " + Number(item.precioCosto || 0).toFixed(2) + "</td>" +
             // "<td>" + item.eliminado + "</td>" +
-            
-
-            "<td><button class='btn btn-info' onclick='BuscarMaterialId(" + item.materialID + ")'>Modificar</button></td>" +
-
-            "<td><button class='btn btn-danger' onclick='EliminarMaterial(" + item.materialID + ")'>Eliminar</button></td>" +
-
+            "<td class = text-center><button class='btn btn-info' onclick='BuscarMaterialId(" + item.materialID + ")'>Modificar</button></td>" +
+            "<td class = text-center><button class='btn btn-danger' onclick='EliminarMaterial(" + item.materialID + ")'>Eliminar</button></td>" +
 
             "</tr>"
         );
@@ -248,8 +244,6 @@ function BuscarMaterialId (id) {
         //     document.getElementById("RubroIDEditar").value = data.rubroID;
         // }, 100);
         
-
-
         $('#modalEditarMateriales').modal('show');
     })
     .catch (error => console.error("No se puedo acceder a la api, verifique el error", error));
